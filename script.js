@@ -1,4 +1,3 @@
-// Puntini gialli sulle "i": basta aggiungere class="dot" a un titolo nell'HTML
 document.querySelectorAll('.dot').forEach(el => {
   el.setAttribute('aria-label', el.textContent.trim());
   const walker = document.createTreeWalker(el, NodeFilter.SHOW_TEXT);
